@@ -4,20 +4,19 @@ export default function Footer() {
   const closeHour = 23;
   const isOpen = hour >= openHour && hour < closeHour;
 
-
   return (
     <footer className="footer">
       {isOpen ? (
-            <div className="order">
-            <p>
-              Nous sommes ouvert de {openHour}:00  jusqu'à {closeHour}:00. Commandez en ligne où venez sur place
-            </p>
-            <button className="btn">Order</button>
-          </div>
+        <div className="order">
+          <p>
+            We're open from {openHour}:00 to {closeHour}:00. Come visit us or
+            order online.
+          </p>
+          <button className="btn">Order</button>
+        </div>
       ) : (
         <p>
-          Nous sommes actuellement fermés, votre pizzeria favorite est ouverte
-          entre {openHour}:00 et {closeHour}:00.
+          We're happy to welcome you between {openHour}:00 and {closeHour}:00.
         </p>
       )}
     </footer>

@@ -11,8 +11,8 @@ export default function Menu({ pizzaData }) {
       {numPizzas > 0 ? (
         <>
           <p>
-            Cuisine italienne authentique. 6 plats créatifs au choix. Pizza
-            cuite aux feux de bois, ingrédients biologiques, pizzas d'exception.
+            Authentic Italian cuisine. 6 creative dishes to choose from. All
+            from our stone oven, all organic, all delicious.
           </p>
 
           <ul className="pizzas">
@@ -22,7 +22,7 @@ export default function Menu({ pizzaData }) {
           </ul>
         </>
       ) : (
-        <p>Nous travaillions encore sur le menu veuillez revenir plus tard 😢</p>
+        <p>We're still working on our menu. Please come back later 😢</p>
       )}
     </main>
   );
