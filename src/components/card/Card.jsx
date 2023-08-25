@@ -5,7 +5,7 @@ export default function Card({ pizza }) {
       <div>
         <h3>{pizza.name}</h3>
         <p>{pizza.ingredients}</p>
-        <span>{pizza.soldOut ? "Plus disponible" : pizza.price}</span>
+        <span>{pizza.soldOut ? "Not available" : pizza.price}</span>
       </div>
     </li>
   );
